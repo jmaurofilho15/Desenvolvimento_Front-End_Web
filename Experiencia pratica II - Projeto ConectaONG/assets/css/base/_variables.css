@@ -1,0 +1,43 @@
+/* assets/css/base/_variables.css */
+:root {
+    /* 1. Paleta de Cores (12 cores) */
+    --color-primary: #0064B4;        /* Azul principal (ONG) */
+    --color-primary-dark: #004A8C;   /* Azul escuro (Hover) */
+    --color-secondary: #FFC107;      /* Amarelo (Destaque) */
+    --color-accent: #4CAF50;         /* Verde (Ação, Doação) */
+    --color-accent-dark: #388E3C;    /* Verde escuro (Hover) */
+    
+    --color-text: #333333;           /* Texto principal */
+    --color-text-light: #666666;     /* Texto secundário */
+    --color-border: #DDDDDD;         /* Bordas */
+    --color-background: #FFFFFF;     /* Fundo principal */
+    --color-background-light: #f9f9f9; /* Fundo sutil */
+
+    --color-feedback-error: #D32F2F; /* Vermelho (Validação) */
+    --color-feedback-success: #388E3C; /* Verde (Validação) */
+
+    /* 2. Tipografia */
+    --font-family-heading: 'Montserrat', sans-serif;
+    --font-family-body: 'Open Sans', sans-serif;
+    
+    /* Hierarquia de Fontes (5+ tamanhos) */
+    --font-size-sm: 0.875rem; /* 14px */
+    --font-size-md: 1rem;     /* 16px (Base) */
+    --font-size-lg: 1.25rem;  /* 20px */
+    --font-size-xl: 1.75rem;  /* 28px */
+    --font-size-xxl: 2.5rem;  /* 40px */
+    
+    /* 3. Sistema de Espaçamento Modular (Base 8px) */
+    --space-xs: 4px;   /* 0.5 * 8px */
+    --space-sm: 8px;   /* 1 * 8px */
+    --space-md: 16px;  /* 2 * 8px */
+    --space-lg: 24px;  /* 3 * 8px */
+    --space-xl: 32px;  /* 4 * 8px */
+    --space-xxl: 48px; /* 6 * 8px */
+    --space-xxxl: 64px;/* 8 * 8px */
+
+    /* Outros */
+    --border-radius: 4px;
+    --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
+    --shadow-md: 0 4px 8px rgba(0,0,0,0.1);
+}

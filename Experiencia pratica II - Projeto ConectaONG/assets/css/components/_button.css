@@ -1,0 +1,68 @@
+/* assets/css/components/_button.css */
+.btn {
+    display: inline-block;
+    padding: var(--space-sm) var(--space-lg);
+    border: none;
+    border-radius: var(--border-radius);
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-md);
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Botão Primário (Ação principal) */
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    border: 2px solid var(--color-primary);
+}
+
+/* Botão Secundário (Ação alternativa) */
+.btn-secondary {
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+}
+
+/* Botão de Destaque (Doação) */
+.btn-accent {
+    background-color: var(--color-accent);
+    color: var(--color-background);
+    border: 2px solid var(--color-accent);
+}
+
+/* --- Estados Visuais --- */
+
+/* Hover */
+.btn-primary:hover {
+    background-color: var(--color-primary-dark);
+    border-color: var(--color-primary-dark);
+}
+.btn-secondary:hover {
+    background-color: var(--color-background-light);
+}
+.btn-accent:hover {
+    background-color: var(--color-accent-dark);
+    border-color: var(--color-accent-dark);
+}
+
+/* Focus (Acessibilidade) */
+.btn:focus {
+    outline: 3px solid var(--color-secondary);
+    outline-offset: 2px;
+}
+
+/* Active (Pressionado) */
+.btn:active {
+    transform: translateY(2px);
+    filter: brightness(0.95);
+}
+
+/* Disabled */
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: translateY(0);
+}
