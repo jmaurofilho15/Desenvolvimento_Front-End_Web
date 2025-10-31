@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - ConectaONG</title>
+    <meta name="description" content="Cadastre-se para ser um voluntário ou apoiador da ConectaONG.">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <a href="index.html">
+            ConectaONG
+        </a>
+        
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="cadastro.html">Participe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Junte-se a Nós</h1>
+        <p>Preencha o formulário abaixo para se cadastrar como voluntário ou apoiador. Entraremos em contato em breve.</p>
+        
+        <section class="registration-form">
+            <h2>Formulário de Cadastro</h2>
+            
+            <form action="/api/cadastro" method="POST">
+                
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    
+                    <div>
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome_completo" required placeholder="Seu nome completo">
+                    </div>
+                    
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required placeholder="exemplo@dominio.com">
+                    </div>
+                    
+                    <div>
+                        <label for="cpf">CPF:</label>
+                        <input type="tel" id="cpf" name="cpf" required 
+                               placeholder="000.000.000-00" 
+                               pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" 
+                               title="Digite um CPF no formato: 000.000.000-00">
+                    </div>
+                    
+                    <div>
+                        <label for="telefone">Telefone (Celular):</label>
+                        <input type="tel" id="telefone" name="telefone" required 
+                               placeholder="(00) 00000-0000"
+                               pattern="\(\d{2}\) \d{5}-\d{4}"
+                               title="Digite um telefone no formato: (00) 00000-0000">
+                    </div>
+
+                    <div>
+                        <label for="nascimento">Data de Nascimento:</label>
+                        <input type="date" id="nascimento" name="data_nascimento" required>
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Endereço</legend>
+                    
+                    <div>
+                        <label for="cep">CEP:</label>
+                        <input type="tel" id="cep" name="cep" required 
+                               placeholder="00000-000"
+                               pattern="\d{5}-\d{3}"
+                               title="Digite um CEP no formato: 00000-000">
+                    </div>
+                    
+                    <div>
+                        <label for="endereco">Endereço (Rua e Número):</label>
+                        <input type="text" id="endereco" name="endereco" required placeholder="Ex: Rua das Flores, 100">
+                    </div>
+                    
+                    <div>
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" id="cidade" name="cidade" required>
+                    </div>
+                    
+                    <div>
+                        <label for="estado">Estado:</label>
+                        <select id="estado" name="estado" required>
+                            <option value="">Selecione...</option>
+                            </select>
+                    </div>
+                </fieldset>
+
+                <button type="submit">Enviar Cadastro</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 ConectaONG. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="assets/js/masks.js" defer></script>
+</body>
+</html>
